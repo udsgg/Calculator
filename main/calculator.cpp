@@ -6,10 +6,10 @@ int main() {
     char op;
     char exit = 1;
 
-    printf("Calculator : ");
-    scanf("%d", &result);
-
     while(1) {
+        printf("Calculator : ");
+        scanf("%d", &result);
+        
         while(1) {
             int c = getchar();
 
@@ -27,13 +27,13 @@ int main() {
             else if (op == '/') result /= num;
             else if (op == '%') result %= num;
 
-            printf("Exit 0, don't Exit 1 :");
-            scanf("%c", &exit);
-
         }
-        
+    
         printf("\n");
-        printf("result = %d", result);
+        printf("result = %d\n", result);
+
+        printf("Exit 0, don't Exit 1 :");
+            scanf("%c", &exit);
 
         if(exit == 0) {
                 break;
