@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int number;
+    int numbers;
     int result;
     char op;
     int exit = 1;
@@ -20,23 +20,23 @@ int main() {
 
             op = c;
 
-            scanf("%d", &number);
+            scanf("%d", &numbers);
 
             if (op == '+'){
-                result += number;
+                result += numbers;
             } 
             else if (op == '-') {
-                result -= number;
+                result -= numbers;
             }
              
             else if (op == '*') {
-                result *= number;
+                result *= numbers;
             } 
             else if (op == '/') {
-                result /= number;
+                result /= numbers;
             } 
             else if (op == '%') {
-                result %= number;
+                result %= numbers;
             }
 
         }
