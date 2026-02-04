@@ -4,9 +4,9 @@ int main() {
     int num;
     int result;
     char op;
-    int exit = 1;
+    char exit = 1;
 
-    while(exit == 1) {
+    while(1) {
         printf("Calculator : ");
         scanf("%d", &result);
         
@@ -21,22 +21,11 @@ int main() {
 
             scanf("%d", &num);
 
-            if (op == '+'){
-                result += num;
-            } 
-            else if (op == '-') {
-                result -= num;
-            }
-             
-            else if (op == '*') {
-                result *= num;
-            } 
-            else if (op == '/') {
-                result /= num;
-            } 
-            else if (op == '%') {
-                result %= num;
-            }
+            if (op == '+') result += num;
+            else if (op == '-') result -= num;
+            else if (op == '*') result *= num;
+            else if (op == '/') result /= num;
+            else if (op == '%') result %= num;
 
         }
     
@@ -44,13 +33,12 @@ int main() {
         printf("result = %d\n", result);
 
         printf("Exit 0, don't Exit 1 :");
-            scanf("%d", &exit);
+            scanf("%c", &exit);
 
         if(exit == 0) {
-            break;
-        } else {
-            exit = 1;
-        }
+                break;
+            }
     }
 
+    
 }
