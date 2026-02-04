@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int num;
+    int number;
     int result;
     char op;
     int exit = 1;
-    //asdasd
+    
 
     while(exit == 1) {
         printf("Calculator : ");
@@ -20,23 +20,23 @@ int main() {
 
             op = c;
 
-            scanf("%d", &num);
+            scanf("%d", &number);
 
             if (op == '+'){
-                result += num;
+                result += number;
             } 
             else if (op == '-') {
-                result -= num;
+                result -= number;
             }
              
             else if (op == '*') {
-                result *= num;
+                result *= number;
             } 
             else if (op == '/') {
-                result /= num;
+                result /= number;
             } 
             else if (op == '%') {
-                result %= num;
+                result %= number;
             }
 
         }
